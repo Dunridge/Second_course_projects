@@ -8,7 +8,7 @@
 // and redo the connections between these projects and connect LR1 file 
 //to your GitHub repository...
 #include <iostream>
-#include "LR1.h"
+#include "lab1.h"
 
 using namespace std;
 
