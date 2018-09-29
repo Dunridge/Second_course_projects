@@ -2,16 +2,16 @@
 
 /*
 TODO:
-(1) The problem was isnan
+(1)HELLO
 (2)
 (3)
 
 */
 
 #include <iostream>
-#include "lab1.h"
-#include <stdio.h>
-#include <math.h>
+#include "lab_1_rand_gen.h"
+//#include <stdio.h>
+//#include <math.h>
 
 using namespace std;
 
@@ -163,14 +163,14 @@ void Rand_gen::meth10(void)
 {
 	/*int con = 0.9;
 	double X, Y, V;
-	do 
+	do
 	{
-		Y = tan(M_PI*meth01());
-		X = sqrt(2 * con - Y) + con - 1;
-		if (X>0)
-		{
-			V = meth01();
-		}
+	Y = tan(M_PI*meth01());
+	X = sqrt(2 * con - Y) + con - 1;
+	if (X>0)
+	{
+	V = meth01();
+	}
 	} while ();*/
 }
 
@@ -181,7 +181,7 @@ int Rand_gen::menu(void)
 	while (true)
 	{
 		cin >> func_num;
-		if ( func_num < 11 && func_num > 0)
+		if (!isnan(func_num) && func_num < 11 && func_num > 0)
 		{
 			throw "Please, enter only a number.\n";
 		}

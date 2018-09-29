@@ -1,18 +1,15 @@
 //Полінка Максим, К-24
 
 #include <iostream>
-class Rand_gen;
-typedef void (Rand_gen::*func)(void);
+
 class Rand_gen
 {
 public:
 	//(*) - do these;
-	int c[10]{};//counter that shows us the frequencies...
+	int c[10]{};
 	func methods[10];//changed here...
-	const int N = 100;
+	Rand_gen();//write void init() instead of Rand_gen constructor
 	void init();//initializes the array
-	void euclidian_meth(int a, int b, int &d, int &x, int &y);//d -gcd; x,y - solutions 
-	int mod_inverse(int a, int m);//inverses mod values 
 	void meth01(void); //(*) //Лінійний конгруентний метод
 	void meth02(void); //(*) //Квадратичний конгруентний метод
 	void meth03(void); //(*) //Числа Фібоначчі
@@ -24,8 +21,7 @@ public:
 	void meth09(void); //Метод логарифму для генерування показового розподілу
 	void meth10(void); //Метод Аренса для генерування гамма-розподілу порядку a > 1
 	int menu(void);//a menu
-	void show(int n);
-	void clear(int n);
 	void doit(int k);
 };
+
 

@@ -1,4 +1,5 @@
 //Полінка Максим, К-24
+#pragma once
 
 #include <iostream>
 class Rand_gen;
@@ -28,4 +29,5 @@ public:
 	void clear(int n);
 	void doit(int k);
 };
+
 

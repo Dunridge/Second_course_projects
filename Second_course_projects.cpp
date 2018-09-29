@@ -27,5 +27,7 @@ int main()
 	a.init();
 	a.doit(1);
 	a.doit(2);
+
+	system("pause");
 	return 0;
 }
